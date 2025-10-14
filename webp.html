@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Club Signup</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+      margin-top: 30px;
+    }
+
+    form {
+      background-color: #fff;
+      width: 60%;
+      max-width: 500px;
+      margin: 20px auto;
+      padding: 20px 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    label {
+      font-weight: bold;
+      display: block;
+      margin-top: 10px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    fieldset {
+      margin-top: 15px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    legend {
+      font-weight: bold;
+      color: #444;
+    }
+
+    input[type="checkbox"],
+    input[type="radio"] {
+      margin-right: 5px;
+    }
+
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 15px;
+      display: block;
+      width: 100%;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Join Our Book Club!</h1>
+
+  <form action="#" method="post">
+
+    <!-- Full Name -->
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" name="fullname" required>
+
+    <!-- Email -->
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email" required>
+
+    <!-- Favorite Genres -->
+    <fieldset>
+      <legend>Favorite Genres:</legend>
+      <input type="checkbox" id="fiction" name="genre" value="Fiction">
+      <label for="fiction">Fiction</label><br>
+
+      <input type="checkbox" id="mystery" name="genre" value="Mystery">
+      <label for="mystery">Mystery</label><br>
+
+      <input type="checkbox" id="scifi" name="genre" value="Sci-Fi">
+      <label for="scifi">Sci-Fi</label><br>
+
+      <input type="checkbox" id="nonfiction" name="genre" value="Non-Fiction">
+      <label for="nonfiction">Non-Fiction</label><br>
+
+      <input type="checkbox" id="others" name="genre" value="Others">
+      <label for="others">Others</label>
+    </fieldset>
+
+    <!-- Reading Frequency -->
+    <fieldset>
+      <legend>How often do you read?</legend>
+      <input type="radio" id="daily" name="frequency" value="Daily">
+      <label for="daily">Daily</label><br>
+
+      <input type="radio" id="weekly" name="frequency" value="Weekly">
+      <label for="weekly">Weekly</label><br>
+
+      <input type="radio" id="occasionally" name="frequency" value="Occasionally">
+      <label for="occasionally">Occasionally</label>
+    </fieldset>
+
+    <!-- Favorite Author -->
+    <label for="author">Favorite Author:</label>
+    <input type="text" id="author" name="author">
+
+    <!-- Why do you love reading? -->
+    <label for="reason">Why do you love reading?</label>
+    <textarea id="reason" name="reason" rows="4" cols="40"></textarea>
+
+    <!-- Submit Button -->
+    <input type="submit" value="Join the Club">
+
+  </form>
+
+</body>
+</html>
