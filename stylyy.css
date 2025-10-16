@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-primary: hsl(229, 36%, 37%);
+  --clr-primary-dark: hsl(158, 36%, 25%);
+  --clr-gray: hsl(176, 12%, 48%);
+  --clr-dark: hsl(212, 21%, 14%);
+  --clr-bg: hsl(56, 70%, 78%);
+  --clr-white: #fff;
+  --radius: 12px;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--clr-bg);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem; 
+}
+
+/* Card Container */
+.card {
+  background-color: var(--clr-white);
+  border-radius: var(--radius);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  max-width: 370px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.284);
+}
+
+/* Image section */
+.card__image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+/* Content section */
+.card__content {
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.product-title {
+  font-family: "Fraunces", serif;
+  font-size: 1.35rem;
+  color: var(--clr-dark);
+}
+
+.product-description {
+  font-size: 0.95rem;
+  color: var(--clr-gray);
+  line-height: 1.6;
+}
+
+.card__pricing {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.price-current {
+  font-size: 1.5rem;
+  color: var(--clr-primary);
+  font-weight: 700;
+}
+
+.price-original {
+  font-size: 0.9rem;
+  color: var(--clr-gray);
+  text-decoration: line-through;
+}
+
+/* Button */
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--clr-primary);
+  color: var(--clr-white);
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  padding: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: var(--clr-primary-dark);
+}
+
+/* Responsive (desktop) */
+@media (min-width: 768px) {
+  .card {
+    flex-direction: row;
+    max-width: 700px;
+  }
+
+  .card__image {
+    flex: 1;
+  }
+
+  .card__content {
+    flex: 1;
+    padding: 2rem;
+  }
+
+  .card__image img {
+    height: 100%;
+  }
+}
+
