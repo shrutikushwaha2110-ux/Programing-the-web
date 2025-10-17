@@ -24,13 +24,15 @@
           <span class="price-current">₹3,499</span>
           <span class="price-original">₹4,299</span>
         </div>
-        <button class="btn btn--primary">
-          <img src="icon-cart.svg" alt="" aria-hidden="true" />
-          Add to Cart
-        </button>
+        <label for="qty">Quantity:</label>
+        <input id="qty" type="number" value="1" min="1" />
+        <button class="add-to-cart">Add to Cart</button>
+        <input id="discount" type="number" placeholder="Enter discount %" />
+        <button id="apply-discount">Apply Discount</button>
       </div>
     </article>
   </main>
+  <script source src="script.js"></script>
 </body>
 </html>
 
